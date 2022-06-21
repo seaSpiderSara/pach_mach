@@ -7272,7 +7272,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2041644710}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.54, y: 4.24, z: 0.14595076}
+  m_LocalPosition: {x: -3.45, y: 4.19, z: 0.14595076}
   m_LocalScale: {x: 0.6589898, y: 0.69207525, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7382,6 +7382,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ballSpeed: 0.5
   ball_: {fileID: 2041644713}
+  controller: 1
+  run_: 32
 --- !u!1 &2067491832
 GameObject:
   m_ObjectHideFlags: 0

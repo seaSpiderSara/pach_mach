@@ -6,8 +6,11 @@ public class ball_position_and_run : MonoBehaviour
 {
     public float ballSpeed = 10f;
     public Rigidbody2D ball_;
-
+    public bool controller = true;
     private Vector2 _movement;
+
+    public KeyCode run_ = KeyCode.Space;
+   // public GameObject ball_game;
 
     private void Start()
     {
@@ -16,7 +19,18 @@ public class ball_position_and_run : MonoBehaviour
 
     private void Update()
     {
-        _movement.x = Input.GetAxisRaw("Horizontal");
+        if(controller == true)
+        {
+            _movement.x = Input.GetAxisRaw("Horizontal");
+        }
+        
+
+        if (Input.GetKeyDown(run_))
+        {
+            controller = false;
+            ball_.gravityScale = 35;
+
+        }
     }
 
     private void FixedUpdate()
