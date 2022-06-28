@@ -11,6 +11,9 @@ public class ball_position_and_run : MonoBehaviour
     public bool controller = true;
     private Vector2 _movement;
 
+    public float vx;
+    public float vy;
+
     public KeyCode run_ = KeyCode.Space;
 
     private void Awake()
@@ -38,6 +41,8 @@ public class ball_position_and_run : MonoBehaviour
 
 
         }
+
+
     }
 
     private void FixedUpdate()
@@ -47,9 +52,17 @@ public class ball_position_and_run : MonoBehaviour
 
     public void OneMoreTry()
     {
-        transform.position = new Vector3(1.79f, 3.09f, 0);
+        transform.position = new Vector3(vx, vy, 0);
         ball_.gravityScale = 0;
         controller = true;
     }
+
+    public void NoMore()
+    {
+        controller = false;
+        transform.position = new Vector3(vx, vy, 0);
+        gameObject.transform.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
+    }
     
 }
+//1.79f, 3.09f

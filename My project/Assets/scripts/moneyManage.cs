@@ -8,9 +8,10 @@ public class moneyManage : MonoBehaviour
 {
     public static moneyManage instance;
 
-    public int mainCash = 25;
+    public  int mainCash = 25;
     public int cashChange;
     public TextMeshProUGUI mainCashDisp;
+    public GameObject debt;
     public KeyCode wasteMoney = KeyCode.Space;
 
     //allowing elements of this code to be called in other objects
@@ -22,6 +23,7 @@ public class moneyManage : MonoBehaviour
     public void Start()
     {
         mainCashDisp.text = "Your cash: " + mainCash.ToString();
+        debt.SetActive(false);
     }
 
     public void Update()
@@ -32,15 +34,19 @@ public class moneyManage : MonoBehaviour
             mainCashDisp.text = "Your cash: " + mainCash.ToString();
         }
 
-        if (mainCash == 0)
+        if (mainCash <= -1)
         {
-
+            debt.SetActive(true);
+        }
+        else
+        {
+            debt.SetActive(false);
         }
     }
 
     public void AddPoint()
     {
-        mainCash += 5;
+        mainCash += cashChange;
         mainCashDisp.text = "Your cash: " + mainCash.ToString();
     }
 
