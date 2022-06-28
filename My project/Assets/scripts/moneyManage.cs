@@ -22,7 +22,7 @@ public class moneyManage : MonoBehaviour
 
     public void Start()
     {
-        mainCashDisp.text = "Your cash: " + mainCash.ToString();
+        mainCashDisp.text = "Your cash: " + mainCash.ToString() + " coins.";
         debt.SetActive(false);
     }
 
@@ -31,7 +31,7 @@ public class moneyManage : MonoBehaviour
         if (Input.GetKeyDown(wasteMoney))
         {
             mainCash -= 5;
-            mainCashDisp.text = "Your cash: " + mainCash.ToString();
+            mainCashDisp.text = "Your cash: " + mainCash.ToString() + " coins.";
         }
 
         if (mainCash <= -1)
@@ -47,7 +47,7 @@ public class moneyManage : MonoBehaviour
     public void AddPoint()
     {
         mainCash += cashChange;
-        mainCashDisp.text = "Your cash: " + mainCash.ToString();
+        mainCashDisp.text = "Your cash: " + mainCash.ToString() + " coins.";
     }
 
     
