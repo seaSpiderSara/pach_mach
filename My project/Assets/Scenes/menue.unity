@@ -200,8 +200,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1131994159}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.0077, y: 0.05, z: 0}
-  m_LocalScale: {x: 1.5093224, y: 1.5093224, z: 1.5093224}
+  m_LocalPosition: {x: -0.0099, y: 0.01, z: 0}
+  m_LocalScale: {x: 1.5151643, y: 1.4637326, z: 1.5093224}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -394,7 +394,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -296, y: -47}
+  m_AnchoredPosition: {x: -303, y: -56.715}
   m_SizeDelta: {x: 294.72, y: 113.43}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1831317513
@@ -677,7 +677,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!223 &2130098913
 Canvas:
   m_ObjectHideFlags: 0
@@ -687,7 +687,7 @@ Canvas:
   m_GameObject: {fileID: 2130098910}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 1
+  m_RenderMode: 2
   m_Camera: {fileID: 1509150489}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
@@ -707,8 +707,8 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2130098910}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 90}
+  m_LocalScale: {x: 0.017761989, y: 0.017761989, z: 0.017761989}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1831317512}
@@ -718,5 +718,5 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0, y: 0}
+  m_SizeDelta: {x: 1000.00006, y: 563}
+  m_Pivot: {x: 0.5, y: 0.5}
